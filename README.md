@@ -12,6 +12,8 @@ No download, sign-in or installation is needed for the web version.
 
 ## Reddit version
 
-Chicken Crossing is packaged as the separate Reddit app `cluck-cross-33610`, targeting `r/aded33610_dev` for testing. [Reddit build, installation and post-creation instructions](reddit/README.md).
+**[Play Chicken Crossing inside Reddit](https://www.reddit.com/r/aded33610_dev/comments/1wmfeiz/chicken_crossing_tiny_wings_big_snack_ambitions/)**
 
-[Controls, local testing and publishing details](games/chicken-crossing/README.md)
+Installed as `cluck-cross-33610` in `r/aded33610_dev` for testing. [Reddit build, installation and post-creation instructions](https://github.com/sunshine7933/reddit-mini-games/blob/main/reddit/README.md).
+
+[Controls, local testing and publishing details](https://github.com/sunshine7933/reddit-mini-games/blob/main/games/chicken-crossing/README.md)

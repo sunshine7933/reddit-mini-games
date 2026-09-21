@@ -2,6 +2,8 @@
 
 App: `cluck-cross-33610` · development community: `r/aded33610_dev`.
 
+**[Open the playable Reddit post](https://www.reddit.com/r/aded33610_dev/comments/1wmfeiz/chicken_crossing_tiny_wings_big_snack_ambitions/)**
+
 This package reuses the exact game files in `games/chicken-crossing/`. It adds a lightweight, non-scrolling launch card inside Reddit and opens the game in expanded mode only when a player presses Play.
 
 ## Build and test

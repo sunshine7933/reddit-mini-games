@@ -1,0 +1,14 @@
+/* Keep the whole board and controls visible in Reddit's expanded modal. */
+html,body{height:100%;margin:0}
+.wrap{padding:8px 12px;max-width:444px}
+header .eyebrow,header>p:last-child,footer,#instructions small{display:none}
+h1{font-size:22px;margin:2px 0 6px;letter-spacing:-.5px}
+.hud{padding:5px 12px;border-radius:10px;margin-bottom:5px;font-size:9px}
+.hud strong{font-size:20px}
+canvas{width:auto;max-width:100%;height:clamp(110px,calc(100svh - 295px),504px);margin:auto;border-radius:10px}
+#message{font-size:12px;line-height:16px;min-height:32px;margin:5px 0}
+.actions button{min-height:44px}
+.controls{gap:8px;margin:10px 0 5px}
+.controls>div{display:contents}
+.controls button{width:56px;min-height:44px;font-size:23px}
+#instructions{font-size:10px;line-height:1.4;margin:5px 0}
