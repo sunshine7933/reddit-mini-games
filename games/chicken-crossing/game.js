@@ -1,0 +1,12 @@
+const canvas=document.getElementById('game'),ctx=canvas.getContext('2d');
+const scoreEl=document.getElementById('score'),bestEl=document.getElementById('best'),msg=document.getElementById('message');
+const W=canvas.width,H=canvas.height,cols=7,cell=W/cols;
+let chicken,lanes,score,best=0,running=false,last=0;
+const jokes=['A shopping cart got you. Seriously? 😂','That driver definitely saw you. 🚗','The chicken would like to speak to management. 🐔','So close. The road wins this round. 😅'];
+function reset(){chicken={c:3,y:H-45};score=0;scoreEl.textContent=0;lanes=[];for(let i=0;i<7;i++)lanes.push({y:H-120-i*65,dir:i%2?1:-1,speed:55+i*12,items:[Math.random()*W,Math.random()*W]});running=true;msg.textContent='Cross the chaos! 🐔';}
+function move(dir){if(!running)reset();if(dir==='left')chicken.c=Math.max(0,chicken.c-1);if(dir==='right')chicken.c=Math.min(cols-1,chicken.c+1);if(dir==='up'){chicken.y-=cell;score+=10;scoreEl.textContent=score;if(chicken.y<35){score+=100;scoreEl.textContent=score;chicken.y=H-45;msg.textContent='MADE IT! +100 🎉 Again!';}}}
+document.querySelectorAll('[data-move]').forEach(b=>b.addEventListener('click',()=>move(b.dataset.move)));document.getElementById('restart').addEventListener('click',reset);
+function hit(){const x=chicken.c*cell+cell/2;for(const l of lanes){if(Math.abs(chicken.y-l.y)<25)for(const ix of l.items){let dx=Math.abs(x-ix);dx=Math.min(dx,W-dx);if(dx<34){running=false;best=Math.max(best,score);bestEl.textContent=best;msg.textContent=jokes[Math.floor(Math.random()*jokes.length)]+' Score: '+score;return true}}}return false}
+function draw(){ctx.clearRect(0,0,W,H);ctx.fillStyle='#79c267';ctx.fillRect(0,0,W,H);lanes.forEach((l,i)=>{ctx.fillStyle=i%2?'#60656f':'#555b65';ctx.fillRect(0,l.y-25,W,50);ctx.fillStyle='#eee';for(let x=12;x<W;x+=55)ctx.fillRect(x,l.y-2,25,4);for(const ix of l.items){ctx.font='34px sans-serif';ctx.textAlign='center';ctx.fillText(i===3?'🛒':i===5?'🛴':'🚗',ix,l.y+12)}});ctx.font='38px sans-serif';ctx.textAlign='center';ctx.fillText('🐔',chicken.c*cell+cell/2,chicken.y+14)}
+function loop(t){let dt=Math.min((t-last)/1000,.04)||0;last=t;if(running){lanes.forEach(l=>l.items=l.items.map(x=>(x+l.dir*l.speed*dt+W)%W));hit()}draw();requestAnimationFrame(loop)}
+reset();requestAnimationFrame(loop);
