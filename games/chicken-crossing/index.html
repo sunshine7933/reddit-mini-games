@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chicken Crossing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hud"><div><b>🐔 Chicken Crossing</b><small>Game #001</small></div><div class="scores">Score <span id="score">0</span> · Best <span id="best">0</span></div></section>
+  <canvas id="game" width="390" height="600" aria-label="Chicken Crossing game"></canvas>
+  <section class="controls" aria-label="Game controls">
+    <button data-move="left">⬅️</button><button data-move="up">⬆️</button><button data-move="right">➡️</button>
+  </section>
+  <p id="message">Get the chicken across the chaos. Tap ⬆️ to start!</p>
+  <button id="restart">Play / Restart</button>
+</main>
+<script src="game.js"></script>
+</body></html>
