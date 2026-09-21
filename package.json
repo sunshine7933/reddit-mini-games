@@ -1,0 +1,15 @@
+{
+  "name": "sunshine-chicken-crossing",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node reddit/build.mjs",
+    "test": "node --test games/chicken-crossing/game.test.cjs",
+    "dev": "devvit playtest aded33610_dev",
+    "upload": "devvit upload",
+    "install:reddit": "devvit install aded33610_dev"
+  },
+  "dependencies": {"@devvit/web": "0.14.4", "express": "5.2.1"},
+  "devDependencies": {"devvit": "0.14.4", "esbuild": "0.25.9"}
+}

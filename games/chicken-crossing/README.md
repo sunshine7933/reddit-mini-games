@@ -32,6 +32,6 @@ GitHub Pages publishes this public repository from **main / (root)**, with `.noj
 
 Pages settings: https://github.com/sunshine7933/reddit-mini-games/settings/pages
 
-## Future Reddit / Devvit pass
+## Reddit / Devvit version
 
-This is a standalone browser game, not yet a Reddit app. Devvit packaging, daily leaderboards and optional bonus items (golden egg, taco, crown) can be added later.
+The same game assets are packaged for Reddit as `cluck-cross-33610`. See [Reddit build and installation instructions](../../reddit/README.md). Daily leaderboards and optional bonus items (golden egg, taco, crown) can be added later.
