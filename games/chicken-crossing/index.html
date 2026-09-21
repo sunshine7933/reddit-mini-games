@@ -1,19 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chicken Crossing</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173c32">
+  <title>Chicken Crossing · Game #001</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="wrap">
-  <section class="hud"><div><b>🐔 Chicken Crossing</b><small>Game #001</small></div><div class="scores">Score <span id="score">0</span> · Best <span id="best">0</span></div></section>
-  <canvas id="game" width="390" height="600" aria-label="Chicken Crossing game"></canvas>
-  <section class="controls" aria-label="Game controls">
-    <button data-move="left">⬅️</button><button data-move="up">⬆️</button><button data-move="right">➡️</button>
-  </section>
-  <p id="message">Get the chicken across the chaos. Tap ⬆️ to start!</p>
-  <button id="restart">Play / Restart</button>
+  <header><p class="eyebrow">SUNSHINE'S MINI-GAMES · NO. 001</p><h1>Chicken Crossing <span>🐔</span></h1><p>Big dreams. Tiny wings. Questionable traffic.</p></header>
+  <section class="hud" aria-label="Scoreboard"><div>SCORE <strong id="score">0</strong></div><div>BEST THIS VISIT <strong id="best">0</strong></div></section>
+  <canvas id="game" width="392" height="504" tabindex="0" aria-label="Chicken Crossing playfield. Use arrow keys or WASD to move, P to pause." aria-describedby="instructions message">Your browser needs canvas support to play Chicken Crossing.</canvas>
+  <p id="message" role="status" aria-live="polite">Why cross the road? The snacks are over there.</p>
+  <div class="actions"><button id="restart">Let's cross!</button><button id="pause" disabled>Pause</button></div>
+  <section class="controls" aria-label="Movement controls"><button data-move="left" aria-label="Move left">←</button><div><button data-move="up" aria-label="Move forward">↑</button><button data-move="down" aria-label="Move backward">↓</button></div><button data-move="right" aria-label="Move right">→</button></section>
+  <p id="instructions">Tap the arrows or use <b>↑ ↓ ← → / WASD</b>.<br>Reach the snack lawn for <b>+100</b>. Dodge the traffic!<br><small>P to pause · R to restart · Best score lasts until reload.</small></p>
+  <footer>Family-friendly chaos. Zero actual chickens harmed.</footer>
 </main>
 <script src="game.js"></script>
-</body></html>
+</body>
+</html>
