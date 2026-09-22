@@ -6,7 +6,9 @@ Daily fun, uplifting and funny mini-games.
 
 Tap hungry pigeons, let cats sleep, and save your pizza through a 45-second lunch rush. Play with clicks, taps, or keys 1–9. No dragging or audio.
 
-Open `games/pigeon-pizza-panic/` from the game collection when serving this repository. [Controls, tests, and separate Reddit app setup](games/pigeon-pizza-panic/README.md).
+**[Play Pigeon Pizza Panic on the web](https://sunshine7933.github.io/reddit-mini-games/games/pigeon-pizza-panic/)** · **[Play inside Reddit](https://www.reddit.com/r/aded33610_dev/comments/1wnhs0j/pigeon_pizza_panic_your_lunch_their_entire/)**
+
+[Controls, tests, and separate Reddit app setup](games/pigeon-pizza-panic/README.md).
 
 ## Play Chicken Crossing 🐔
 
