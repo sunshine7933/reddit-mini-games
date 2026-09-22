@@ -5,11 +5,18 @@
   "type": "module",
   "scripts": {
     "build": "node reddit/build.mjs",
-    "test": "node --test games/chicken-crossing/game.test.cjs",
+    "test": "node --test games/chicken-crossing/game.test.cjs games/pigeon-pizza-panic/game.test.js games/pigeon-pizza-panic/reddit/server.test.js",
     "dev": "devvit playtest aded33610_dev",
     "upload": "devvit upload",
-    "install:reddit": "devvit install aded33610_dev"
+    "install:reddit": "devvit install aded33610_dev",
+    "build:pigeon": "node games/pigeon-pizza-panic/reddit/build.mjs"
   },
-  "dependencies": {"@devvit/web": "0.14.4", "express": "5.2.1"},
-  "devDependencies": {"devvit": "0.14.4", "esbuild": "0.25.9"}
+  "dependencies": {
+    "@devvit/web": "0.14.4",
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "devvit": "0.14.4",
+    "esbuild": "0.25.9"
+  }
 }

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#204c46">
+  <title>Pigeon Pizza Panic · Game 002</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game">
+  <header><p class="eyebrow">SUNSHINE’S MINI-GAMES <span>NO. 002</span></p><h1>Pigeon Pizza <em>Panic!</em></h1><p class="tagline">Your lunch. Their entire personality.</p></header>
+  <section class="scoreboard" aria-label="Game statistics">
+    <div><span>SCORE</span><strong id="score">0</strong></div>
+    <div><span>TIME LEFT</span><strong id="time">45<span>s</span></strong></div>
+    <div><span>PIZZA LEFT</span><strong id="slices">5 / 5</strong></div>
+  </section>
+  <div class="table-label"><span>★ THE LUNCH SHIFT ★</span><span id="combo">Best: 0</span></div>
+  <section class="table" aria-label="Pizza defense game">
+    <div id="board" class="board" role="group" aria-label="Nine picnic spots. Keyboard keys 1 to 9 match left to right, top to bottom."></div>
+    <div id="overlay" class="overlay">
+      <div class="card">
+        <div class="mascot" aria-hidden="true">🍕</div>
+        <p class="eyebrow" id="card-eyebrow">A VERY SERIOUS LUNCH EMERGENCY</p>
+        <h2 id="card-title">Protect the pizza.</h2>
+        <p id="card-copy">Survive 45 seconds. Shoo hungry pigeons before they steal all 5 slices!</p>
+        <ul id="rules"><li>🐦 <b>Tap pigeons</b> to shoo them.</li><li>🐱 <b>Let cats sleep.</b> They bite. And eat.</li><li>🍕 <b>Grab pizza</b> for a slice + 25 points.</li></ul>
+        <button id="start" class="primary">Let’s save lunch!</button>
+      </div>
+    </div>
+  </section>
+  <p id="message" class="message" role="status" aria-live="polite">The pigeons have not paid for this pizza.</p>
+  <footer><button id="pause" class="secondary" disabled>Pause</button><p>Tap / click · Keys 1–9 · P to pause<br><span>Sound-free snacking. No dragging required.</span></p></footer>
+</main>
+<script type="module" src="game.js"></script>
+</body>
+</html>
