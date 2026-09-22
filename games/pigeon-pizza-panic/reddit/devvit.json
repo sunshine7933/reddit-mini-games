@@ -1,6 +1,6 @@
 {
   "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
-  "name": "pigeon-pizza-33610",
+  "name": "pizza-king-pigeon",
   "post": {
     "dir": "dist/client",
     "entrypoints": {
