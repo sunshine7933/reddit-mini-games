@@ -31,3 +31,6 @@ Installed as `cluck-cross-33610` in `r/aded33610_dev` for testing. [Reddit build
 Catch falling snacks with left/right taps or keyboard controls, build combos, and welcome a harmless Quack Attack. 45 seconds or five misses. No dragging or audio.
 
 [Play Squirrel Snack Stack on the web](https://sunshine7933.github.io/reddit-mini-games/games/squirrel-snack-stack/) · [Controls and separate Reddit setup](games/squirrel-snack-stack/README.md).
+
+[Play Squirrel Snack Stack inside Reddit](https://www.reddit.com/r/aded33610_dev/comments/1wodm14/squirrel_snack_stack_tiny_paws_tall_snacks/) — installed as its own app, snack-stack-33610 v0.0.1, in r/aded33610_dev.
+

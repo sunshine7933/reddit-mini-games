@@ -16,7 +16,7 @@ Optional browser suite: `node games/squirrel-snack-stack/browser.test.mjs`. Inst
 
 ## Separate Reddit app
 
-This game has its own `reddit/devvit.json` and build output. It does not replace Chicken Crossing or Pigeon Pizza Panic. Proposed app slug: `snack-stack-33610`; availability is confirmed only on upload. The community follows the existing repository configuration: `aded33610_dev`.
+This game has its own `reddit/devvit.json` and build output. It does not replace Chicken Crossing or Pigeon Pizza Panic. Registered app slug: `snack-stack-33610`, version 0.0.1. Installed in `r/aded33610_dev`. The community follows the existing repository configuration: `aded33610_dev`.
 
 From **this game's reddit directory**, after authenticating the owning Reddit account:
 
@@ -29,3 +29,7 @@ npx devvit install aded33610_dev
 Then visit `r/aded33610_dev` as a moderator, open the community menu, and choose **Create Squirrel Snack Stack post**. That creates the playable custom post. Upload/install alone does not create a post. Do not run the root upload/install commands for this game: those belong to Chicken Crossing.
 
 See `reddit-post.md` for ready-to-use post copy. No public-community rollout is implied by these test-community instructions.
+
+## Live Reddit post
+
+[Play Squirrel Snack Stack inside Reddit](https://www.reddit.com/r/aded33610_dev/comments/1wodm14/squirrel_snack_stack_tiny_paws_tall_snacks/). Upload, installation, and custom-post creation completed on September 23, 2026.
