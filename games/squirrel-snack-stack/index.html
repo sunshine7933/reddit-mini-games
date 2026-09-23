@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173f35"><title>Squirrel Snack Stack · Game 003</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body><main>
+  <header><p class="eyebrow">SUNSHINE’S MINI-GAMES / 003</p><span class="badge">45 seconds of nutty ambition</span></header>
+  <h1>Squirrel<br><em>Snack Stack.</em></h1>
+  <p class="tagline">Tiny paws. Tall snacks. Absolutely no plan.</p>
+  <section class="hud" aria-label="Round statistics">
+    <div><span>SCORE</span><strong id="score">0</strong></div><div><span>COMBO</span><strong id="combo">0</strong></div><div><span>LEFT</span><strong id="time">45s</strong></div><div><span>MISSES</span><strong id="misses">0 / 5</strong></div>
+  </section>
+  <section id="forest" aria-label="Five-lane snack catching game" aria-describedby="instructions">
+    <div class="sun" aria-hidden="true"></div><div class="hill hill-one" aria-hidden="true"></div><div class="hill hill-two" aria-hidden="true"></div>
+    <div class="lanes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div id="items" aria-hidden="true"></div>
+    <div id="squirrel" aria-hidden="true"><div id="stack"></div><span>🐿️</span><b></b></div>
+    <div id="quack" hidden>🦆 QUACK ATTACK!</div>
+    <div class="ground" aria-hidden="true">THE SNACK PRESERVATION SOCIETY</div>
+    <div id="overlay"><div class="card"><p class="eyebrow" id="card-label">YOUR DAILY FOREST BREAK</p><h2 id="card-title">A balanced diet?<br>One snack on another.</h2><p id="card-copy">Catch snacks in your lane. Build a combo. Try not to become a duck’s personal furniture.</p><button id="start">Let’s get stacking! →</button></div></div>
+  </section>
+  <p id="status" role="status" aria-live="polite" aria-atomic="true">A very small squirrel believes in you.</p>
+  <div class="controls"><button id="left" aria-label="Move one lane left">← Left</button><button id="pause" disabled>Pause</button><button id="right" aria-label="Move one lane right">Right →</button></div>
+  <p id="position" class="sr-only">Squirrel in lane 3 of 5.</p>
+  <details><summary>How to become a snack legend</summary><p id="instructions">Tap or click Left / Right to move one lane. Keyboard: ← → or A / D. P pauses. Catch food at the dotted line. You have 45 seconds or 5 missed snacks. Every 5 consecutive catches raises your multiplier, up to ×4. Ducks cause a harmless two-second wobble, never a miss. No dragging. No sound.</p><p class="legend">🍪 Cookie: 10 · 🍓 Berry: 20 · 🌰 Acorn: 30<br>Smaller snacks fall faster. Catch them for more points!</p><p>Reduced motion removes decorative wobble. Falling snacks still move so you can play. Pause whenever you need a break.</p></details>
+  <footer><span id="record">Personal best: 0</span><span>A little joy. A little chaos.</span></footer>
+</main><script type="module" src="game.js"></script></body></html>

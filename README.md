@@ -25,3 +25,9 @@ No download, sign-in or installation is needed for the web version.
 Installed as `cluck-cross-33610` in `r/aded33610_dev` for testing. [Reddit build, installation and post-creation instructions](https://github.com/sunshine7933/reddit-mini-games/blob/main/reddit/README.md).
 
 [Controls, local testing and publishing details](https://github.com/sunshine7933/reddit-mini-games/blob/main/games/chicken-crossing/README.md)
+
+## Game 003 · Squirrel Snack Stack 🐿️
+
+Catch falling snacks with left/right taps or keyboard controls, build combos, and welcome a harmless Quack Attack. 45 seconds or five misses. No dragging or audio.
+
+[Play Squirrel Snack Stack on the web](https://sunshine7933.github.io/reddit-mini-games/games/squirrel-snack-stack/) · [Controls and separate Reddit setup](games/squirrel-snack-stack/README.md).

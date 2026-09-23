@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "snack-stack-33610",
+  "post": {
+    "dir": "dist/client",
+    "entrypoints": {
+      "default": { "entry": "splash.html", "height": "regular", "inline": true },
+      "game": { "entry": "index.html" }
+    }
+  },
+  "server": { "dir": "dist/server", "entry": "index.cjs" },
+  "permissions": { "reddit": { "enable": true }, "http": { "enable": false }, "redis": true },
+  "menu": {
+    "items": [{
+      "label": "Create Squirrel Snack Stack post",
+      "description": "Stack a little forest joy",
+      "location": "subreddit",
+      "forUserType": "moderator",
+      "endpoint": "/internal/menu/create-post"
+    }]
+  },
+  "dev": { "subreddit": "aded33610_dev" },
+  "scripts": { "build": "node build.mjs" }
+}
