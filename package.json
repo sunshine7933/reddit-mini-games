@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "build": "node reddit/build.mjs",
-    "test": "node --test games/chicken-crossing/game.test.cjs games/pigeon-pizza-panic/game.test.js games/pigeon-pizza-panic/reddit/server.test.js games/squirrel-snack-stack/game.test.js games/squirrel-snack-stack/reddit/server.test.js",
+    "test": "node --test games/chicken-crossing/game.test.cjs games/pigeon-pizza-panic/game.test.js games/pigeon-pizza-panic/reddit/server.test.js games/squirrel-snack-stack/game.test.js games/squirrel-snack-stack/reddit/server.test.js games/snack-stack-attack/game.test.js games/snack-stack-attack/reddit/server.test.js",
     "dev": "devvit playtest aded33610_dev",
     "upload": "devvit upload",
     "install:reddit": "devvit install aded33610_dev",
     "build:pigeon": "node games/pigeon-pizza-panic/reddit/build.mjs",
-    "build:squirrel": "node games/squirrel-snack-stack/reddit/build.mjs"
+    "build:squirrel": "node games/squirrel-snack-stack/reddit/build.mjs",
+    "build:snack": "node games/snack-stack-attack/reddit/build.mjs"
   },
   "dependencies": {
     "@devvit/web": "0.14.4",
