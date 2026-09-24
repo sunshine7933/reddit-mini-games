@@ -17,3 +17,9 @@ Browser suite: `node games/snack-stack-attack/browser.test.mjs`. Use the existin
 Separate app: `snack-attack-33610`. Existing configured community: `r/aded33610_dev`. From this game's `reddit` directory, use `devvit upload` and `devvit install aded33610_dev`, then the community moderator menu **Create Snack Stack Attack post**. Root upload commands belong to Chicken Crossing.
 
 See `reddit-post.md` for the prepared post. Upload/install alone does not create a playable post.
+
+## Posted on Reddit
+
+Version 0.0.1 uploaded and installed on September 24, 2026. [Play Snack Stack Attack](https://www.reddit.com/r/aded33610_dev/comments/1wp2ao6/snack_stack_attack_it_looks_ridiculously_easy/).
+
+The configured community, `r/aded33610_dev`, is private. This is a playable post in that community, not a public launch or app-directory approval.
