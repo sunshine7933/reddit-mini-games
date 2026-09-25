@@ -23,3 +23,7 @@ See `reddit-post.md` for the prepared post. Upload/install alone does not create
 Version 0.0.1 uploaded and installed on September 24, 2026. [Play Snack Stack Attack](https://www.reddit.com/r/aded33610_dev/comments/1wp2ao6/snack_stack_attack_it_looks_ridiculously_easy/).
 
 The configured community, `r/aded33610_dev`, is private. This is a playable post in that community, not a public launch or app-directory approval.
+
+## Launch review
+
+Version 0.0.2, containing the tested game and app-root review documentation, was successfully submitted to Reddit for review on September 24, 2026. The CLI confirmed that custom-post apps require review before publication and that approval will be emailed. Intended public community: r/SunshinesMiniGames. Public game installation/post creation is pending approval.
