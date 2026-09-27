@@ -2,6 +2,12 @@
 
 Daily fun, uplifting and funny mini-games.
 
+## Game 005 · Bee Late! 🐝
+
+Your boss is buzzing. Your commute is blooming chaos. Collect flowers and avoid pointless meetings in a 30-second pollen commute. Tap/click or use keys 1–3; no dragging or sound. Includes personal best, streak bonuses, instant replay, pause and reduced-motion support.
+
+[Play Bee Late!](https://sunshine7933.github.io/reddit-mini-games/games/bee-late/) · [Controls, tests and separate Reddit setup](games/bee-late/README.md) · [Reddit post copy](games/bee-late/reddit-post.md).
+
 ## Game 002 · Pigeon Pizza Panic 🍕
 
 Tap hungry pigeons, let cats sleep, and save your pizza through a 45-second lunch rush. Play with clicks, taps, or keys 1–9. No dragging or audio.

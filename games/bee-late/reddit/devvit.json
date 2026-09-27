@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "bee-late-33610",
+  "post": {
+    "dir": "dist/client",
+    "entrypoints": {
+      "default": { "entry": "splash.html", "height": "regular", "inline": true },
+      "game": { "entry": "index.html" }
+    }
+  },
+  "server": { "dir": "dist/server", "entry": "index.cjs" },
+  "permissions": { "reddit": { "enable": true }, "http": { "enable": false }, "redis": true },
+  "menu": {
+    "items": [{
+      "label": "Create Bee Late! post",
+      "description": "Collect pollen and dodge pointless meetings",
+      "location": "subreddit",
+      "forUserType": "moderator",
+      "endpoint": "/internal/menu/create-post"
+    }]
+  },
+  "dev": { "subreddit": "aded33610_dev" },
+  "scripts": { "build": "node build.mjs" }
+}
