@@ -4,21 +4,44 @@
   "post": {
     "dir": "dist/client",
     "entrypoints": {
-      "default": { "entry": "splash.html", "height": "regular", "inline": true },
-      "game": { "entry": "index.html" }
+      "default": {
+        "entry": "splash.html",
+        "height": "regular",
+        "inline": true
+      },
+      "game": {
+        "entry": "index.html"
+      }
     }
   },
-  "server": { "dir": "dist/server", "entry": "index.cjs" },
-  "permissions": { "reddit": { "enable": true }, "http": { "enable": false }, "redis": true },
-  "menu": {
-    "items": [{
-      "label": "Create Bee Late! post",
-      "description": "Collect pollen and dodge pointless meetings",
-      "location": "subreddit",
-      "forUserType": "moderator",
-      "endpoint": "/internal/menu/create-post"
-    }]
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.cjs"
   },
-  "dev": { "subreddit": "aded33610_dev" },
-  "scripts": { "build": "node build.mjs" }
+  "permissions": {
+    "reddit": {
+      "enable": true
+    },
+    "http": {
+      "enable": false
+    },
+    "redis": true
+  },
+  "menu": {
+    "items": [
+      {
+        "label": "Create Bee Late! post",
+        "description": "Collect pollen and dodge pointless meetings",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/create-post"
+      }
+    ]
+  },
+  "dev": {
+    "subreddit": "aded33610_dev"
+  },
+  "scripts": {
+    "build": "node build.mjs"
+  }
 }
