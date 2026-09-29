@@ -1,0 +1,1 @@
+import{Devvit}from'@devvit/public-api';import{createApp}from'./app.js';Devvit.configure({redditAPI:true});export default createApp(Devvit.reddit);
