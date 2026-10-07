@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createApp} from './app.js';
+import {readFile} from 'node:fs/promises';
+test('manifest menu endpoint creates the correct playable post and handles failure',async()=>{const manifest=JSON.parse(await readFile(new URL('devvit.json',import.meta.url)));assert.equal(manifest.name,'sock-monster-33610');let fail=false;const app=createApp({submitCustomPost:async options=>{assert.match(options.title,/Sock Monster Showdown/);assert.equal(options.entry,'default');if(fail)throw Error('test failure');return {url:'https://www.reddit.com/r/test/comments/example'};}});const server=app.listen(0,'127.0.0.1');await new Promise(resolve=>server.once('listening',resolve));try{const url='http://127.0.0.1:'+server.address().port+manifest.menu.items[0].endpoint;let r=await fetch(url,{method:'POST'});assert.equal(r.status,200);assert.match((await r.json()).navigateTo,/example/);fail=true;r=await fetch(url,{method:'POST'});assert.equal(r.status,500);assert.match((await r.json()).showToast,/try again/);}finally{server.close();}});

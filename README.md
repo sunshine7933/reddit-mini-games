@@ -40,3 +40,8 @@ Catch falling snacks with left/right taps or keyboard controls, build combos, an
 
 [Play Squirrel Snack Stack inside Reddit](https://www.reddit.com/r/aded33610_dev/comments/1wodm14/squirrel_snack_stack_tiny_paws_tall_snacks/) — installed as its own app, snack-stack-33610 v0.0.1, in r/aded33610_dev.
 
+
+## Sock Monster Showdown · Next after Grandma
+
+Rescue matching sock patterns in 30 seconds, build combos, dodge impostors and chase golden pairs. [Play on the web](https://sunshine7933.github.io/reddit-mini-games/games/sock-monster-showdown/) · [Controls, tests and independent Reddit setup](games/sock-monster-showdown/README.md).
+
