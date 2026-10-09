@@ -45,3 +45,7 @@ Catch falling snacks with left/right taps or keyboard controls, build combos, an
 
 Rescue matching sock patterns in 30 seconds, build combos, dodge impostors and chase golden pairs. [Play on the web](https://sunshine7933.github.io/reddit-mini-games/games/sock-monster-showdown/) · [Controls, tests and independent Reddit setup](games/sock-monster-showdown/README.md).
 
+
+## Math Mayhem
+
+60 seconds of typed-answer arithmetic, three difficulties and streak bonuses. [Game and setup](games/math-mayhem/README.md) · [Reddit post copy](games/math-mayhem/reddit-post.md).
