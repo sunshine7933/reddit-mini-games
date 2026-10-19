@@ -45,3 +45,7 @@ Catch falling snacks with left/right taps or keyboard controls, build combos, an
 
 Rescue matching sock patterns in 30 seconds, build combos, dodge impostors and chase golden pairs. [Play on the web](https://sunshine7933.github.io/reddit-mini-games/games/sock-monster-showdown/) · [Controls, tests and independent Reddit setup](games/sock-monster-showdown/README.md).
 
+
+## Granny Gone Wild: Mall Mayhem!
+
+A five-level shopping-cart platformer with a manager boss, daily dash, upgrades and outfits. [Game and controls](games/granny-mall-mayhem/README.md) · [Launch draft](games/granny-mall-mayhem/reddit-post.md). Independent Devvit app, unpublished; Reddit runtime playtesting remains required.
