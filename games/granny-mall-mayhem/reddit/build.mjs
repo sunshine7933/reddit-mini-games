@@ -1,10 +1,11 @@
-import {mkdir,copyFile} from 'node:fs/promises';
+import {rm, mkdir,copyFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {build} from 'esbuild';
 const path=p=>fileURLToPath(new URL(p,import.meta.url));
+await rm(path('dist'), {recursive:true,force:true});
 await mkdir(path('dist/client'),{recursive:true});await mkdir(path('dist/server'),{recursive:true});
 for(const f of ['index.html','style.css','engine.js','game.js'])await copyFile(path('../'+f),path('dist/client/'+f));
 await copyFile(path('splash.html'),path('dist/client/splash.html'));
 await build({entryPoints:[path('../../../reddit/splash.js')],outfile:path('dist/client/splash.js'),bundle:true,format:'iife',platform:'browser',minify:true});
-await build({entryPoints:[path('server.js')],outfile:path('dist/server/index.cjs'),bundle:true,format:'cjs',platform:'node',target:'node22'});
+await build({entryPoints:[path('server.js')],outfile:path('dist/server/index.cjs'),bundle:true,format:'cjs',platform:'node',target: 'node22', minify: true});
 console.log('Built Granny Mall Mayhem separately; no upload or publishing performed.');

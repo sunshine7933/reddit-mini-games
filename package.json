@@ -16,7 +16,9 @@
     "build:socks": "node games/sock-monster-showdown/reddit/build.mjs",
     "test:socks": "node --test games/sock-monster-showdown/game.test.js games/sock-monster-showdown/reddit/server.test.js",
     "build:granny": "node games/granny-mall-mayhem/reddit/build.mjs",
-    "test:granny": "node --test games/granny-mall-mayhem/game.test.js games/granny-mall-mayhem/reddit/server.test.js"
+    "test:granny": "node --test games/granny-mall-mayhem/game.test.js games/granny-mall-mayhem/reddit/server.test.js",
+    "build:laundry": "node games/laundry-launch/reddit/build.mjs",
+    "build:grocery": "node games/grandmas-grocery-grand-prix/reddit/build.mjs"
   },
   "dependencies": {
     "@devvit/web": "0.14.4",
