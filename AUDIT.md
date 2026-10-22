@@ -41,3 +41,9 @@ Redis permissions are retained: existing Chicken documentation records that mode
 ## Remaining Reddit verification
 
 An authenticated app owner/member must open the four existing private posts and exercise Play, gameplay, pause and replay on desktop and the Reddit mobile app. For games without confirmed posts, inspect the community feed and Developer Portal before creating anything, to avoid duplicate posts or replacing an existing app. Public release status must be checked in the Developer Portal. No upload, installation, publication or post creation was performed by this audit.
+
+## Verification results
+
+[GitHub verification run](https://github.com/sunshine7933/reddit-mini-games/actions/runs/39847396796) passed all 48 existing game/server tests on Node 22. All nine independent Devvit packages built successfully and discarded an injected stale marker from their own generated output directories. Packaged clients range from 12,051 to 42,138 bytes; minified server bundles range from 2,301,374 to 2,512,448 bytes. Dependencies and generated output remain ignored.
+
+All nine games started without page or asset errors in installed Edge at desktop (1280×900) and touch-mobile (390×844) sizes, using the isolated modified source copy. The check also confirmed Mall Mayhem’s web path makes no Reddit progress request. These start checks are not full campaign completion or physical Reddit mobile-app tests. The hosted URLs were checked separately for HTTP response and expected titles.
